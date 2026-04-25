@@ -4,19 +4,20 @@ import user from "@/assets/user.png";
 import Image from "next/image";
 import { Button } from "@heroui/react";
 import { Envelope } from "@gravity-ui/icons";
+import NavLink from "./NavLink";
 
 const NavbarSection = () => {
   const link = (
     <>
-      <Link className="hover:text-blue-500" href="/">
+      <NavLink className="hover:text-blue-500" href="/">
         Home
-      </Link>
-      <Link className="hover:text-blue-500" href="/">
+      </NavLink>
+      <NavLink className="hover:text-blue-500" href="/about">
         About
-      </Link>
-      <Link className="hover:text-blue-500" href="/">
+      </NavLink>
+      <NavLink className="hover:text-blue-500" href="/career">
         Career
-      </Link>
+      </NavLink>
     </>
   );
   return (
